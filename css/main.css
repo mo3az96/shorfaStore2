@@ -5,7 +5,7 @@
   --primaryColor3: rgba(103, 39, 171, 0.3);
   --primaryColor6: rgba(103, 39, 171, 0.6);
   --primaryColor06: rgba(103, 39, 171, 0.06);
-  --secondaryColor: #004956;
+  --secondaryColor: #6727AB;
   --redColor: #d90303;
   --primaryText: #000;
   --secondaryText: #505050;
@@ -375,11 +375,11 @@ html[dir=ltr] select {
   color: var(--primaryColor);
 }
 .default-btn.secondary-btn:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
   color: #fff;
 }
 .default-btn:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
   color: #fff;
 }
 
@@ -2461,6 +2461,9 @@ html[dir=ltr] .search-content .select2-container .select2-selection--single .sel
 .dropdown-content .dropdown-btn.header_user-content::after {
   display: none;
 }
+.dropdown-content .dropdown-btn.header_user-content {
+  height: auto;
+}
 .dropdown-content .dropdown-list {
   position: absolute;
   top: calc(100% + 10px);
@@ -2852,4 +2855,33 @@ html[dir=ltr] .footer-list a:hover {
 .bg-section {
   background-color: #f6f6f6;
   padding: 20px 0 15px;
+}
+
+.auth-page {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  min-height: 336px;
+  padding: 60px 0;
+}
+@media (max-width: 480px) {
+  .auth-page {
+    min-height: unset;
+    padding: 40px 0;
+  }
+}
+
+.auth-content {
+  width: 100%;
+  max-width: 452px;
+  margin: 0 auto;
+}
+
+.auth-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primaryText);
+  text-align: center;
+  line-height: 30px;
+  margin: 0 0 30px;
 }/*# sourceMappingURL=main.css.map */
